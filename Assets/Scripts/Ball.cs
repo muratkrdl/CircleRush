@@ -51,7 +51,7 @@ public class Ball : MonoBehaviour
         if(other.CompareTag("Enemy"))
         {
             Destroy(gameObject);
-            GameManager.Instance.ResetGame();
+            GameManager.Instance.GameOver();
         }
     }
 

@@ -18,7 +18,7 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator StartSpawnEnemy()
     {
-        while(true)
+        while(!GameManager.Instance.IsGameOver)
         {
             var enemy = Instantiate(enemyPrefab, transform.position,Quaternion.identity);
             Vector2 newPos = enemy.transform.position;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -27,6 +28,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
+            if(player == null) { return; }
             player.position = Vector2.up;
         }
         increaseX = Random.Range(-directionRange, directionRange);
