@@ -1,6 +1,12 @@
 
 # CircleRush
 
+Tap to switch the rotation direction of the circle
+
+Time each tap carefully to avoid colliding with the oncoming squares
+
+Collect the yellow squares to gain points
+
 
 # Gameplay
 
